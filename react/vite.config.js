@@ -6,6 +6,9 @@ import { devQRPlugin} from "react-dev-qr";
 // https://vite.dev/config/
 export default defineConfig({
   // GitHub Pages serves the site from /<repo-name>/
-  base: '/tudengibaar-bingo/',
+  build: {
+    outDir: "build"
+  },
+  base: "",
   plugins: [react(), tailwindcss(), devQRPlugin()],
 })
